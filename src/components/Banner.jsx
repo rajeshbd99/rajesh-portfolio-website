@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <section id="home" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-black via-gray-900 to-black text-white">
       <motion.h1 className="text-5xl font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        Hi, I'm Rajesh Chowdhury 👋
+        Hi, I am Rajesh Chowdhury 👋
       </motion.h1>
       <p className="text-xl mt-4">A Passionate Web Developer & Competitive Programmer</p>
       <div className="flex space-x-6 mt-6">
