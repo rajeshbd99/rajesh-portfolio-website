@@ -1,7 +1,17 @@
-export default function App() {
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
     <div>
-      <h1>My Portfolio</h1>
+      <Navbar />
+      <Banner />
+      <Projects />
+      <Footer />
     </div>
-  )
-}
+  );
+};
+
+export default App;
