@@ -17,7 +17,7 @@ const AboutMe = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-4xl font-bold text-green-400 mb-6">About Me</h2>
-                    <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                    <p className=" text-xl font-medium text-gray-500 mt-2 leading-relaxed max-w-3xl mx-auto">
                         Hi, I am <span className="font-semibold text-white">Rajesh Chowdhury</span>, a Computer Science Engineer and a passionate Full Stack Developer from Bangladesh. With a strong foundation in coding and an eye for detail, I specialize in creating efficient, scalable, and user-friendly web applications.
                     </p>
                 </motion.div>

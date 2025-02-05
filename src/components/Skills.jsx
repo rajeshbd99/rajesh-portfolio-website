@@ -49,7 +49,7 @@ const Skills = () => {
 
     return (
         <section id="skills" className="bg-gray-900 text-white py-12 px-6">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto mt-20">
                 <motion.div
                     className="text-center mb-12"
                     initial={{ opacity: 0, y: -50 }}
@@ -58,7 +58,7 @@ const Skills = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-4xl font-bold text-green-400 mb-4">My Skills</h2>
-                    <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl font-medium text-gray-500 mt-2 max-w-2xl mx-auto leading-relaxed">
                         I specialize in a variety of programming languages, frontend and backend technologies, databases, and design tools.
                     </p>
                 </motion.div>

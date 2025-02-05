@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-blue-600">Get in Touch</h2>
-                    <p className="text-gray-600 mt-4">
+                    <p className="mt-4 text-xl font-medium text-gray-500">
                         I&apos;d love to hear from you! Whether you have a question, want to work together, or just say hello, feel free to reach out.
                     </p>
                 </div>

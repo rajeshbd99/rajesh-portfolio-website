@@ -40,7 +40,7 @@ const Banner = () => {
               delaySpeed={1000}
             />
           </h3>
-          <p className="text-gray-400 text-base md:text-lg mb-6 leading-relaxed text-justify w-full md:w-3xl">
+          <p className=" text-xl font-medium text-gray-500 mt-2 md:text-lg mb-6 leading-relaxed text-justify w-full md:w-3xl">
             Passionate about creating dynamic, responsive, and visually appealing web applications, I specialize in both front-end and back-end development. My focus is on delivering seamless user experiences, clean code, and innovative solutions — lets build something amazing together!
           </p>
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
