@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-green-400 mb-4">Projects</h2>
-        <p className="text-xl font-medium text-gray-500 mt-2">Showcasing a collection of projects that reflect my skills and passion for technology. <br/> These projects highlight my problem-solving abilities, creativity, and dedication to delivering high-quality solutions.</p>
+        <p className="text-xl font-medium text-gray-500 mt-2">Showcasing a collection of projects that reflect my skills and passion for technology. <br /> These projects highlight my problem-solving abilities, creativity, and dedication to delivering high-quality solutions.</p>
 
       </div>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2 px-6 md:px-12">

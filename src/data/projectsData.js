@@ -24,7 +24,8 @@ const projects = [
   },
   {
     title: "Sports Equipment Store",
-    description: "ProSports Hub is a responsive web application designed for managing sports equipment efficiently. Built with React.js and Tailwind CSS, it features secure Firebase authentication for login and registration, along with seamless CRUD operations to add, update, and delete sports equipment. The intuitive interface is optimized for all devices, ensuring a smooth user experience. Key technologies include React Router for navigation, React Toastify for user feedback, and REST API integration for backend communication.",
+    description:
+      "ProSports Hub is a responsive web application designed for managing sports equipment efficiently. Built with React.js and Tailwind CSS, it features secure Firebase authentication for login and registration, along with seamless CRUD operations to add, update, and delete sports equipment. The intuitive interface is optimized for all devices, ensuring a smooth user experience. Key technologies include React Router for navigation, React Toastify for user feedback, and REST API integration for backend communication.",
     githubClient: "https://github.com/rajeshbd99/Sports_Equipment_Store_client",
     githubServer: "https://github.com/rajeshbd99/Sports_Equipment_Store_server",
     live: "https://sports-equipment-store-880cf.web.app/",
@@ -32,12 +33,15 @@ const projects = [
   },
   {
     title: "Carrer Counseling Platform",
-    description: "Career Hub is a professional platform designed to help users advance their careers by providing essential insights, tools, and services. The platform features secure user registration and social login options, along with protected routes to ensure access to key sections is restricted to authenticated users. A dynamic user dashboard allows for personalized profiles with avatar support and update options. Career resources include tips for resume building, job applications, and professional growth. Built with React and Tailwind CSS, the platform offers a fully responsive and interactive user experience, leveraging Firebase Authentication for secure access and React Toastify for real-time notifications.",
-    githubClient: "https://github.com/rajeshbd99/Carrer_Counseling?tab=readme-ov-file",
-    githubServer: "https://github.com/rajeshbd99/Carrer_Counseling?tab=readme-ov-file",
+    description:
+      "Career Hub is a professional platform designed to help users advance their careers by providing essential insights, tools, and services. The platform features secure user registration and social login options, along with protected routes to ensure access to key sections is restricted to authenticated users. A dynamic user dashboard allows for personalized profiles with avatar support and update options. Career resources include tips for resume building, job applications, and professional growth. Built with React and Tailwind CSS, the platform offers a fully responsive and interactive user experience, leveraging Firebase Authentication for secure access and React Toastify for real-time notifications.",
+    githubClient:
+      "https://github.com/rajeshbd99/Carrer_Counseling?tab=readme-ov-file",
+    githubServer:
+      "https://github.com/rajeshbd99/Carrer_Counseling?tab=readme-ov-file",
     live: "https://carrer-counseling-23074.web.app/",
     image: carrer,
-  }
+  },
 ];
 
 export default projects;

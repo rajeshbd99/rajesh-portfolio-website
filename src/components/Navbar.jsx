@@ -12,12 +12,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Brand Name */}
         <h1 className="text-2xl font-bold">Rajesh Chowdhury</h1>
-        
+
         {/* Mobile Menu Toggle */}
         <div className="md:hidden" onClick={() => setNav(!nav)}>
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
-        
+
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 items-center">
           {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      
+
       {/* Mobile Menu */}
       {nav && (
         <ul className="md:hidden absolute top-16 left-0 w-full bg-gray-900 text-center space-y-6 py-6">

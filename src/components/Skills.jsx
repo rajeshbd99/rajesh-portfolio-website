@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaCode, FaDatabase, FaTools, FaNodeJs,FaGitAlt,FaGithub } from "react-icons/fa";
-import { SiJavascript, SiReact, SiMongodb, SiTailwindcss, SiHtml5, SiCss3, SiCplusplus, SiPython, SiMysql, SiFirebase,SiVercel,SiNetlify } from "react-icons/si";
+import { FaCode, FaDatabase, FaTools, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
+import { SiJavascript, SiReact, SiMongodb, SiTailwindcss, SiHtml5, SiCss3, SiCplusplus, SiPython, SiMysql, SiFirebase, SiVercel, SiNetlify } from "react-icons/si";
 
 const Skills = () => {
     // Skills data
@@ -40,7 +40,7 @@ const Skills = () => {
             icon: <FaTools />,
             skills: [
                 { name: "Git", icon: <FaGitAlt /> },
-                {name : "GitHub", icon: <FaGithub />},
+                { name: "GitHub", icon: <FaGithub /> },
                 { name: "Vercel", icon: <SiVercel /> },
                 { name: "Netlify", icon: <SiNetlify /> },
             ],
@@ -64,43 +64,42 @@ const Skills = () => {
                 </motion.div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-  {skillsData.map((category, index) => (
-    <motion.div
-      key={index}
-      className="relative p-6 rounded-lg shadow-lg bg-white/10 backdrop-blur-lg transition-transform transform hover:scale-105 duration-300 border border-white/20"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.2, duration: 0.8 }}
-    >
-      {/* Category Title & Icon */}
-      <div className="flex flex-col items-center">
-        <div className="p-4 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full text-4xl shadow-lg shadow-green-500/50">
-          {category.icon}
-        </div>
-        <h3 className="text-2xl font-bold text-white mt-4">{category.category}</h3>
-      </div>
+                    {skillsData.map((category, index) => (
+                        <motion.div
+                            key={index}
+                            className="relative p-6 rounded-lg shadow-lg bg-white/10 backdrop-blur-lg transition-transform transform hover:scale-105 duration-300 border border-white/20"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.2, duration: 0.8 }}
+                        >
+                            {/* Category Title & Icon */}
+                            <div className="flex flex-col items-center">
+                                <div className="p-4 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full text-4xl shadow-lg shadow-green-500/50">
+                                    {category.icon}
+                                </div>
+                                <h3 className="text-2xl font-bold text-white mt-4">{category.category}</h3>
+                            </div>
 
-      {/* Skills List */}
-      <ul className="grid grid-cols-2 gap-6 mt-6">
-        {category.skills.map((skill, skillIndex) => (
-          <li
-            key={skillIndex}
-            className="flex flex-col items-center text-center group transform hover:scale-110 transition-all duration-300"
-          >
-            <div className="text-3xl p-3 bg-gray-700 rounded-xl text-green-400 group-hover:text-green-500 transition shadow-md group-hover:shadow-green-400">
-              {skill.icon}
-            </div>
-            <span className="mt-2 text-gray-300 text-sm group-hover:text-white transition">
-              {skill.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </motion.div>
-  ))}
-</div>
-
+                            {/* Skills List */}
+                            <ul className="grid grid-cols-2 gap-6 mt-6">
+                                {category.skills.map((skill, skillIndex) => (
+                                    <li
+                                        key={skillIndex}
+                                        className="flex flex-col items-center text-center group transform hover:scale-110 transition-all duration-300"
+                                    >
+                                        <div className="text-3xl p-3 bg-gray-700 rounded-xl text-green-400 group-hover:text-green-500 transition shadow-md group-hover:shadow-green-400">
+                                            {skill.icon}
+                                        </div>
+                                        <span className="mt-2 text-gray-300 text-sm group-hover:text-white transition">
+                                            {skill.name}
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );
