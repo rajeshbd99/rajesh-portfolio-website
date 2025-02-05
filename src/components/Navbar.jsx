@@ -13,7 +13,7 @@ const Navbar = () => {
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
         <ul className="hidden md:flex space-x-6">
-          {["Home", "About", "Skills", "Projects", "Contact", "Resume"].map((item) => (
+          {["Home", "About", "Skills", "Projects","Resume", "Contact"].map((item) => (
             <li key={item} className="cursor-pointer hover:text-blue-500">
               <Link to={item.toLowerCase()} smooth duration={500}>{item}</Link>
             </li>
