@@ -48,7 +48,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="bg-gray-900 text-white py-12 px-6">
+        <section id="skills" className="bg-gradient-to-b from-gray-900 to-black text-white py-12 px-6">
             <div className="max-w-7xl mx-auto mt-20">
                 <motion.div
                     className="text-center mb-12"
