@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import projects from "../data/projectsData";
 import { Github } from "lucide-react";
 import { FaExternalLinkAlt, FaEye } from "react-icons/fa";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 const Projects = () => {

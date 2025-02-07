@@ -64,6 +64,7 @@ const Banner = () => {
                 "A Full Stack Web Developer",
                 "A Problem Solver",
                 "Exploring the Tech Universe",
+                "Let's build something amazing together!",
               ]}
               loop
               cursor
@@ -74,7 +75,7 @@ const Banner = () => {
             />
           </h3>
           <p className="text-xl font-medium text-gray-500 mt-2 md:text-lg mb-6 leading-relaxed text-justify w-full md:w-3xl">
-            Passionate about creating dynamic, responsive, and visually appealing web applications, I specialize in both front-end and back-end development. My focus is on delivering seamless user experiences, clean code, and innovative solutions — let's build something amazing together!
+            Passionate about creating dynamic, responsive, and visually appealing web applications, I specialize in both front-end and back-end development. My focus is on delivering seamless user experiences, clean code, and innovative solutions — let&apos;s build something amazing together!
           </p>
 
           {/* Buttons for Projects and Resume */}
