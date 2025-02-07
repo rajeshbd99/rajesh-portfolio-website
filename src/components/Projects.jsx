@@ -54,7 +54,7 @@ const Projects = () => {
                 <div className="flex justify-between items-center">
                   <a
                     href={project.githubClient}
-                    className="flex items-center text-gray-300 hover:text-green-400 transition space-x-2"
+                    className="btn btn-dash flex items-center text-gray-300 hover:text-blue-400 transition space-x-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -71,7 +71,7 @@ const Projects = () => {
 
                   <a
                     href={project.live}
-                    className="flex items-center text-green-400 hover:text-green-500 space-x-2 transition"
+                    className="btn btn-dash flex items-center text-green-400 hover:text-green-500 space-x-2 transition"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
