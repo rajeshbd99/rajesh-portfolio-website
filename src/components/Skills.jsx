@@ -49,7 +49,7 @@ const Skills = () => {
 
     return (
         <section id="skills" className="bg-gradient-to-b from-gray-900 to-black text-white py-12 px-6">
-            <div className="max-w-7xl mx-auto mt-20">
+            <div className="max-w-7xl mx-auto mt-20 mb-10">
                 <motion.div
                     className="text-center mb-12"
                     initial={{ opacity: 0, y: -50 }}
