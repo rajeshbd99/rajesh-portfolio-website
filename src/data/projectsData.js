@@ -12,6 +12,9 @@ const projects = [
     githubServer: "https://github.com/rajeshbd99/PropertyPulse-server",
     live: "https://real-estate-platform-653cf.web.app/",
     image: realState,
+    techStack : "React, Tailwind CSS, DaisyUI, Vite, Firebase, Sweet Alerts, Toastify, Context API, React Router DOM",
+    challenges : "The main challenge was to implement the user, agent, and admin dashboards with different functionalities and access levels. I had to ensure that the platform was user-friendly and responsive across all devices. I also faced challenges in integrating Firebase authentication and managing user sessions.",
+    futurePlans: "In the future, I plan to add more features to the platform, such as advanced search filters, property recommendations, and real-time chat support. I also plan to optimize the platform for better performance and scalability, ensuring a seamless user experience for all users.",
   },
   {
     title: "Restaurant Management System",
@@ -21,6 +24,9 @@ const projects = [
     githubServer: "https://github.com/rajeshbd99/Restaurant_Management_Server",
     live: "https://restaurant-management-66f13.web.app/",
     image: dineFusion,
+    techStack : "React, Tailwind CSS, Heroicons, Axios, React Router DOM",
+    challenges : "The main challenge was to design a user-friendly interface that was responsive across all devices. I also faced challenges in implementing secure authentication and managing user sessions. Additionally, I had to ensure seamless CRUD operations for adding, updating, and deleting food items.",
+    futurePlans: "In the future, I plan to integrate a real-time order tracking system, implement advanced analytics for restaurant owners, and add support for multiple languages to cater to a diverse user base. I also aim to enhance the platform's performance and scalability to handle a larger number of users and transactions. I plan to optimize the platform for better performance and scalability, ensuring a seamless user experience for all users.",
   },
   {
     title: "Sports Equipment Store",
@@ -30,6 +36,9 @@ const projects = [
     githubServer: "https://github.com/rajeshbd99/Sports_Equipment_Store_server",
     live: "https://sports-equipment-store-880cf.web.app/",
     image: sports,
+    techStack : "React, Tailwind CSS, Firebase, React Router, React Toastify, REST API",
+    challenges : "The main challenge was to design a responsive and user-friendly interface that could be accessed across all devices. I also faced challenges in implementing secure authentication and managing user sessions. Additionally, I had to ensure seamless CRUD operations for adding, updating, and deleting sports equipment.",
+    futurePlans: "In the future, I plan to add a recommendation system for sports equipment based on user preferences, integrate a loyalty program for frequent buyers, and implement advanced search filters to help users find products more easily. I also aim to enhance the platform's performance and scalability to handle a larger inventory and user base. I plan to optimize the platform for better performance and scalability, ensuring a seamless user experience for all users.",
   },
   {
     title: "Carrer Counseling Platform",
@@ -41,6 +50,9 @@ const projects = [
       "https://github.com/rajeshbd99/Carrer_Counseling?tab=readme-ov-file",
     live: "https://carrer-counseling-23074.web.app/",
     image: carrer,
+    techStack : "React, Tailwind CSS, Firebase, React Router, React Toastify",
+    challenges : "The main challenge was to design a user-friendly interface that was responsive across all devices. I also faced challenges in implementing secure authentication and managing user sessions. Additionally, I had to ensure that the platform provided valuable career resources and insights to help users advance their careers.",
+    futurePlans: "In the future, I plan to integrate AI-driven career advice, add a mentorship program to connect users with industry professionals, and implement a job matching system based on user profiles and preferences. I also aim to enhance the platform's performance and scalability to support a larger user base and provide more personalized career resources. I plan to optimize the platform for better performance and scalability, ensuring a seamless user experience for all users.",
   },
 ];
 
