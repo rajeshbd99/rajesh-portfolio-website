@@ -42,15 +42,15 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Contact Information */}
-                    <div className="bg-white shadow-lg p-8 rounded-lg">
+                    <div className="bg-gray-800 shadow-lg p-8 rounded-lg">
                         <h3 className="text-3xl font-bold text-blue-600 mb-6">Contact Information</h3>
                         <div className="space-y-6">
                             {/* Email */}
                             <div className="flex items-center">
                                 <FaEnvelope className="text-blue-600 text-2xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-gray-700">Email</h4>
-                                    <p className="text-gray-600">rajesh99.bd@gmail.com</p>
+                                    <h4 className="font-semibold text-white">Email</h4>
+                                    <p className="text-white">rajesh99.bd@gmail.com</p>
                                 </div>
                             </div>
 
@@ -58,9 +58,9 @@ const Contact = () => {
                             <div className="flex items-center">
                                 <FaPhoneAlt className="text-blue-600 text-2xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-gray-700">Phone</h4>
-                                    <p className="text-gray-600">+880 1856607609</p>
-                                    <p className="text-gray-600">+91 8114809754</p>
+                                    <h4 className="font-semibold text-white">Phone</h4>
+                                    <p className="text-white">+880 1856607609</p>
+                                    <p className="text-white">+91 8114809754</p>
                                 </div>
                             </div>
 
@@ -68,8 +68,8 @@ const Contact = () => {
                             <div className="flex items-center">
                                 <FaWhatsapp className="text-green-500 text-2xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-gray-700">WhatsApp</h4>
-                                    <p className="text-gray-600">+880 1856607609</p>
+                                    <h4 className="font-semibold text-white">WhatsApp</h4>
+                                    <p className="text-white">+880 1856607609</p>
                                 </div>
                             </div>
 
@@ -77,14 +77,14 @@ const Contact = () => {
                             <div className="flex items-center">
                                 <FaMapMarkerAlt className="text-blue-600 text-2xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-gray-700">Location</h4>
-                                    <p className="text-gray-600">Dhaka, Bangladesh</p>
+                                    <h4 className="font-semibold text-white">Location</h4>
+                                    <p className="text-white">Dhaka, Bangladesh</p>
                                 </div>
                             </div>
 
                             {/* Social Links */}
                             <div>
-                                <h4 className="font-semibold text-gray-700">Follow Me</h4>
+                                <h4 className="font-semibold text-white">Follow Me</h4>
                                 <div className="flex space-x-4 mt-2">
                                     <a href="https://facebook.com/rajesh2441139" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 text-2xl transition">
                                         <FaFacebook />
@@ -92,7 +92,7 @@ const Contact = () => {
                                     <a href="https://linkedin.com/in/rajesh-chowdhury-361360224" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 text-2xl transition">
                                         <FaLinkedin />
                                     </a>
-                                    <a href="https://github.com/rajeshbd99" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black text-2xl transition">
+                                    <a href="https://github.com/rajeshbd99" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600 text-2xl transition">
                                         <FaGithub />
                                     </a>
                                 </div>

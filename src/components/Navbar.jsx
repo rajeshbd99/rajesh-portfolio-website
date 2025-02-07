@@ -5,8 +5,8 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const location = useLocation(); // ✅ Get current route
-  const isHomePage = location.pathname === "/"; // ✅ Check if on home page
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const resumeLink = "https://drive.google.com/file/d/19g5xAH9Bi8kC3IsZxNOrl2zxD3ODPnY3/view?usp=sharing";
 

@@ -3,10 +3,10 @@
 
 /* Apply Google Fonts */
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Elegant Font for Headings */
+/* Custom Font Styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
 }
