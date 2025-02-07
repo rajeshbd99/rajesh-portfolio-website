@@ -78,7 +78,7 @@ const Contact = () => {
                                 <FaMapMarkerAlt className="text-blue-600 text-2xl mr-4" />
                                 <div>
                                     <h4 className="font-semibold text-white">Location</h4>
-                                    <p className="text-white">Dhaka, Bangladesh</p>
+                                    <p className="text-white">Chattogram, Bangladesh</p>
                                 </div>
                             </div>
 
