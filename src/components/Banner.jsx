@@ -74,7 +74,7 @@ const Banner = () => {
               delaySpeed={1000}
             />
           </h3>
-          <p className="text-xl font-medium text-gray-500 mt-2 md:text-lg mb-6 leading-relaxed text-justify w-full md:w-3xl">
+          <p className="text-base font-medium text-gray-500 mt-2 md:text-lg mb-6 leading-relaxed text-justify w-full md:w-3xl">
             Passionate about creating dynamic, responsive, and visually appealing web applications, I specialize in both front-end and back-end development. My focus is on delivering seamless user experiences, clean code, and innovative solutions — let&apos;s build something amazing together!
           </p>
 
@@ -140,7 +140,7 @@ const Banner = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="absolute inset-0 bg-green-400 opacity-50 blur-xl rounded-full animate-pulse"></div>
+          <div className="absolute inset-0 bg-green-400 opacity-50 blur-xl rounded-full animate-spin"></div>
           <img
             src={profileImg}
             alt="Rajesh Chowdhury"

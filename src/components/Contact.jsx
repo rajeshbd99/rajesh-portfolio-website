@@ -35,7 +35,7 @@ const Contact = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-green-400 mb-4">Get in Touch</h2>
-                    <p className="mt-4 text-lg font-medium text-gray-400">
+                    <p className="mt-4 text-base font-medium text-gray-400">
                         I&apos;d love to hear from you! Whether you have a question, want to collaborate, or just say hello, feel free to reach out.
                     </p>
                 </div>
