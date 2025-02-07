@@ -3,46 +3,46 @@ import { FaCode, FaDatabase, FaTools, FaNodeJs, FaGitAlt, FaGithub } from "react
 import { SiJavascript, SiReact, SiMongodb, SiTailwindcss, SiHtml5, SiCss3, SiCplusplus, SiPython, SiMysql, SiFirebase, SiVercel, SiNetlify } from "react-icons/si";
 
 const Skills = () => {
-    // Skills data
+    // Skills data with proficiency levels
     const skillsData = [
         {
             category: "Languages",
             icon: <FaCode />,
             skills: [
-                { name: "C", icon: <SiCplusplus /> },
-                { name: "C++", icon: <SiCplusplus /> },
-                { name: "JavaScript", icon: <SiJavascript /> },
-                { name: "Python", icon: <SiPython /> },
+                { name: "C", icon: <SiCplusplus />, level: 85 },
+                { name: "C++", icon: <SiCplusplus />, level: 90 },
+                { name: "JavaScript", icon: <SiJavascript />, level: 95 },
+                { name: "Python", icon: <SiPython />, level: 80 },
             ],
         },
         {
             category: "Frontend",
             icon: <SiReact />,
             skills: [
-                { name: "HTML", icon: <SiHtml5 /> },
-                { name: "CSS", icon: <SiCss3 /> },
-                { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-                { name: "React", icon: <SiReact /> },
+                { name: "HTML", icon: <SiHtml5 />, level: 95 },
+                { name: "CSS", icon: <SiCss3 />, level: 90 },
+                { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 85 },
+                { name: "React", icon: <SiReact />, level: 92 },
             ],
         },
         {
             category: "Backend & Database",
             icon: <FaDatabase />,
             skills: [
-                { name: "Node.js", icon: <FaNodeJs /> },
-                { name: "MongoDB", icon: <SiMongodb /> },
-                { name: "MySQL", icon: <SiMysql /> },
-                { name: "Firebase", icon: <SiFirebase /> },
+                { name: "Node.js", icon: <FaNodeJs />, level: 80 },
+                { name: "MongoDB", icon: <SiMongodb />, level: 85 },
+                { name: "MySQL", icon: <SiMysql />, level: 75 },
+                { name: "Firebase", icon: <SiFirebase />, level: 78 },
             ],
         },
         {
             category: "Other Technologies",
             icon: <FaTools />,
             skills: [
-                { name: "Git", icon: <FaGitAlt /> },
-                { name: "GitHub", icon: <FaGithub /> },
-                { name: "Vercel", icon: <SiVercel /> },
-                { name: "Netlify", icon: <SiNetlify /> },
+                { name: "Git", icon: <FaGitAlt />, level: 90 },
+                { name: "GitHub", icon: <FaGithub />, level: 95 },
+                { name: "Vercel", icon: <SiVercel />, level: 80 },
+                { name: "Netlify", icon: <SiNetlify />, level: 78 },
             ],
         },
     ];
@@ -59,7 +59,7 @@ const Skills = () => {
                 >
                     <h2 className="text-4xl font-bold text-green-400 mb-4">My Skills</h2>
                     <p className="text-xl font-medium text-gray-500 mt-2 max-w-2xl mx-auto leading-relaxed">
-                        I specialize in a variety of programming languages, frontend and backend technologies, databases, and design tools.
+                        I specialize in a variety of programming languages, frontend and backend technologies, databases, and tools.
                     </p>
                 </motion.div>
 
@@ -81,19 +81,26 @@ const Skills = () => {
                                 <h3 className="text-2xl font-bold text-white mt-4">{category.category}</h3>
                             </div>
 
-                            {/* Skills List */}
-                            <ul className="grid grid-cols-2 gap-6 mt-6">
+                            {/* Skills List with Progress Bars */}
+                            <ul className="mt-6 space-y-4">
                                 {category.skills.map((skill, skillIndex) => (
-                                    <li
-                                        key={skillIndex}
-                                        className="flex flex-col items-center text-center group transform hover:scale-110 transition-all duration-300"
-                                    >
-                                        <div className="text-3xl p-3 bg-gray-700 rounded-xl text-green-400 group-hover:text-green-500 transition shadow-md group-hover:shadow-green-400">
-                                            {skill.icon}
+                                    <li key={skillIndex} className="group">
+                                        <div className="flex justify-between items-center">
+                                            <div className="flex items-center space-x-3">
+                                                <span className="text-3xl text-green-400">{skill.icon}</span>
+                                                <span className="text-lg font-medium text-white">{skill.name}</span>
+                                            </div>
+                                            <span className="text-sm text-gray-300">{skill.level}%</span>
                                         </div>
-                                        <span className="mt-2 text-gray-300 text-sm group-hover:text-white transition">
-                                            {skill.name}
-                                        </span>
+                                        {/* Progress Bar Animation */}
+                                        <div className="w-full bg-gray-700 rounded-full h-2 mt-2 overflow-hidden">
+                                            <motion.div
+                                                className="bg-green-500 h-full"
+                                                initial={{ width: "0%" }}
+                                                animate={{ width: `${skill.level}%` }}
+                                                transition={{ duration: 1.5, ease: "easeOut" }}
+                                            ></motion.div>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
