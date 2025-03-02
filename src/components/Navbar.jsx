@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white shadow-md p-4 z-10">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className=" mx-auto flex justify-between items-center">
         {/* Brand Name */}
         <RouterLink to="/" className="text-2xl font-bold">Rajesh Chowdhury</RouterLink>
 
