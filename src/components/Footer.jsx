@@ -1,14 +1,13 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
-  return (
 
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto flex flex-col md:flex-col justify-between items-center">
-        <div className="text-center md:text-left mb-4 md:mb-0">
-          <p className="text-sm">© 2025 Rajesh Chowdhury. All rights reserved.</p>
-        </div>
-        <div className="flex space-x-6 mt-4">
+  return (
+    <footer className="bg-gray-900 text-white py-0">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-1 border-b border-gray-700">
+        
+        {/* Center - Social Links */}
+        <div className="flex-grow flex justify-center space-x-6 mb-4 md: mt-4">
           <a href="https://facebook.com/rajesh2441139" className="text-white hover:text-blue-500">
             <FaFacebookF size={20} />
           </a>
@@ -25,9 +24,15 @@ const Footer = () => {
             <FaGithub size={20} />
           </a>
         </div>
+
+        {/* Right - Visitor Counter */}
+        <div id="footer-counter" className="text-right" dangerouslySetInnerHTML={{ __html: document.getElementById("visitor-counter")?.innerHTML || "" }} /> </div>
+
+      {/* Bottom - Copyright */}
+      <div className="text-center mt-4 pb-4 text-sm text-gray-400">
+        © 2025 Rajesh Chowdhury. All rights reserved.
       </div>
     </footer>
-
   );
 };
 

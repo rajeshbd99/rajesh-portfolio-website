@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
     const formRef = useRef();
@@ -60,7 +60,7 @@ const Contact = () => {
                                 <div>
                                     <h4 className="font-semibold text-white">Phone</h4>
                                     <p className="text-white">+880 1856607609</p>
-                                    <p className="text-white">+91 8114809754</p>
+                                    <p className="text-white">+880 1648631863</p>
                                 </div>
                             </div>
 
@@ -70,6 +70,7 @@ const Contact = () => {
                                 <div>
                                     <h4 className="font-semibold text-white">WhatsApp</h4>
                                     <p className="text-white">+880 1856607609</p>
+                                    <p className="text-white">+880 1648631863</p>
                                 </div>
                             </div>
 
@@ -94,6 +95,9 @@ const Contact = () => {
                                     </a>
                                     <a href="https://github.com/rajeshbd99" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600 text-2xl transition">
                                         <FaGithub />
+                                    </a>
+                                    <a href="https://instagram.com/rajeshchowdhury08" className="text-red-500 hover:text-pink-500">
+                                        <FaInstagram size={20} />
                                     </a>
                                 </div>
                             </div>
