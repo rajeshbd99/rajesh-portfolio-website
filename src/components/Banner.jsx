@@ -11,9 +11,20 @@ import {
   FaNodeJs,
   FaDatabase,
   FaJsSquare,
+  FaPython,
+  FaBook
 } from "react-icons/fa";
+import {
+  SiGooglescholar,
+  SiIeee,
+  SiKaggle,
+  SiResearchgate,
+  SiOrcid,
+  SiTensorflow
+} from "react-icons/si";
 import profileImg from "../assets/profile.jpg";
 import PropTypes from "prop-types";
+import researchImg from "../assets/Rajesh Chowdhury.jpg";
 
 const Banner = ({ mode, setMode, setShowContent }) => {
   const devResume =
@@ -42,7 +53,7 @@ const Banner = ({ mode, setMode, setShowContent }) => {
       className="relative min-h-screen flex justify-center items-center bg-gradient-to-r from-gray-900 via-black to-gray-900 px-4 overflow-hidden"
     >
       {/* Floating Icons */}
-      {mode !== "default" && (
+      {mode === "developer" && (
         <>
           <motion.div
             className="absolute top-16 left-10 text-red-500 text-6xl opacity-30"
@@ -85,6 +96,75 @@ const Banner = ({ mode, setMode, setShowContent }) => {
             animate="animate"
           >
             <FaDatabase />
+          </motion.div>
+        </>
+      )}
+
+      {mode === "researcher" && (
+        <>
+          <motion.div
+            className="absolute top-16 left-10 text-blue-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <SiGooglescholar />
+          </motion.div>
+          <motion.div
+            className="absolute top-32 right-16 text-indigo-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <SiIeee />
+          </motion.div>
+          <motion.div
+            className="absolute bottom-20 left-14 text-sky-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <SiKaggle />
+          </motion.div>
+          <motion.div
+            className="absolute bottom-32 right-20 text-green-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <SiResearchgate />
+          </motion.div>
+          <motion.div
+            className="absolute top-52 left-1/2 text-yellow-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <FaDatabase />
+          </motion.div>
+
+          <motion.div
+            className="absolute bottom-10 left-1/2 text-green-500 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <FaPython />
+          </motion.div>
+          <motion.div
+            className="absolute top-10 right-1/4 text-orange-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <SiOrcid />
+          </motion.div>
+          <motion.div
+            className="absolute bottom-40 left-1/3 text-pink-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <SiTensorflow />
+          </motion.div>
+          <motion.div
+            className="absolute top-1/2 right-1/2 text-red-400 text-6xl opacity-30"
+            variants={floatingVariants}
+            animate="animate"
+          >
+            <FaBook />
           </motion.div>
         </>
       )}
@@ -219,8 +299,8 @@ const Banner = ({ mode, setMode, setShowContent }) => {
                       setShowContent(true);
                     }}
                     className={`relative px-6 py-3 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 ${mode === "developer"
-                        ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg scale-105"
-                        : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:scale-105"
+                      ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg scale-105"
+                      : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:scale-105"
                       }`}
                   >
                     👨‍💻 Web Developer
@@ -232,8 +312,8 @@ const Banner = ({ mode, setMode, setShowContent }) => {
                       setShowContent(true);
                     }}
                     className={`relative px-6 py-3 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 ${mode === "researcher"
-                        ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg scale-105"
-                        : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:scale-105"
+                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg scale-105"
+                      : "bg-gray-800 text-gray-300 hover:bg-gray-700 hover:scale-105"
                       }`}
                   >
                     🔬 Researcher
@@ -299,19 +379,33 @@ const Banner = ({ mode, setMode, setShowContent }) => {
         {/* Right Content */}
         {mode !== "default" && (
           <motion.div
-            className="relative w-64 h-64 mb-20 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-green-400 shadow-lg overflow-hidden"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            className={`relative mb-20 shadow-2xl transition-all duration-700
+      ${mode === "researcher"
+                ? "w-[260px] h-[320px] rounded-2xl border-4 border-blue-500 bg-white/10 backdrop-blur-md"
+                : "w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-green-400"
+              }`}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="absolute inset-0 bg-green-400 opacity-50 blur-xl rounded-full animate-spin"></div>
+            {/* Glow effect */}
+            <div
+              className={`absolute inset-0 rounded-2xl blur-2xl animate-pulse
+        ${mode === "researcher" ? "bg-blue-400/40" : "bg-green-400/50 rounded-full"}
+      `}
+            ></div>
+
+            {/* Image */}
             <img
-              src={profileImg}
+              src={mode === "researcher" ? researchImg : profileImg}
               alt="Rajesh Chowdhury"
-              className="w-full h-full object-cover relative z-0"
+              className={`w-full h-full relative z-10 transition-all duration-500
+        ${mode === "researcher" ? "object-cover rounded-2xl" : "object-cover rounded-full"}
+      `}
             />
           </motion.div>
         )}
+
       </div>
     </section>
   );
